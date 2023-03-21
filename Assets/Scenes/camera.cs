@@ -11,7 +11,7 @@ public class camera : MonoBehaviour
     float yRotation = 0f;
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
