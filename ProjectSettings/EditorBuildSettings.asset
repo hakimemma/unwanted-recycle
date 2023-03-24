@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/tutorial.unity
     guid: 1cb7637509c237f4da1ed6fe4ec09e61
   - enabled: 1
-    path: Assets/Scenes/conveyor mini game.unity
+    path: Assets/Scenes/bosses room.unity
     guid: e837876caba4cd244aef5f67d118c1dc
   m_configObjects: {}
