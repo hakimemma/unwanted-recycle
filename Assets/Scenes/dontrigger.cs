@@ -1,27 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
-public class dialougetut : MonoBehaviour
+public class dontrigger : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
+    public Image Panel;
     public string[] lines;
     public float textSpeed;
+    public bool isRunning;
 
     private int index;
-    
+
 
     void Start()
     {
         textComponent.text = string.Empty;
-        //StartDialouge();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && isRunning == true)
         {
             if (textComponent.text == lines[index])
             {
@@ -35,12 +38,23 @@ public class dialougetut : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if(Input.GetKey(KeyCode.E) && isRunning == false)
+        {
+            isRunning = true;
+            Panel.gameObject.SetActive(true);
+            StartDialouge();
+            
+        }
+    }
+
     void StartDialouge()
     {
         index = 0;
         StartCoroutine(TypeLine());
     }
-    
+
     IEnumerator TypeLine()
     {
         foreach (char c in lines[index].ToCharArray())
@@ -52,7 +66,7 @@ public class dialougetut : MonoBehaviour
 
     void NextLine()
     {
-        if (index < lines.Length -1)
+        if (index < lines.Length - 1)
         {
             index++;
             textComponent.text = string.Empty;
@@ -60,7 +74,7 @@ public class dialougetut : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            Panel.gameObject.SetActive(false);
         }
     }
 }
