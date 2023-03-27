@@ -718,8 +718,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.4863, y: 3.35}
-  m_SizeDelta: {x: 926.0508, y: 349.348}
+  m_AnchoredPosition: {x: 8.2975, y: -15.744}
+  m_SizeDelta: {x: 1858.6458, y: 936.835}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1198595237
 MonoBehaviour:
@@ -743,11 +743,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c21132efeb3db7944a9e3819b2b25af9, type: 3}
-    m_FontSize: 100
+    m_FontSize: 169
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 100
+    m_MaxSize: 169
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -875,7 +875,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1601252601
 RectTransform:
   m_ObjectHideFlags: 0
@@ -893,7 +893,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -138, y: -86}
+  m_AnchoredPosition: {x: -311, y: -301}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1601252602
@@ -1328,6 +1328,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 400
   playerBody: {fileID: 0}
+  just_lock: 0
+  will_we_lock: 1
 --- !u!23 &13746318427287739
 MeshRenderer:
   m_ObjectHideFlags: 0
