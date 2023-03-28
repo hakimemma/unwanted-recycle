@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/rc2.unity
     guid: a8e9ef0e861ca5e4a8e42b0fcd3b21dc
+  - enabled: 1
+    path: Assets/Scenes/MIKE.unity
+    guid: eb76c32aeb5fb6e459fa7534874a30f6
+  - enabled: 1
+    path: Assets/Scenes/conv2.unity
+    guid: ba43f57b376e129409fc2c96715c5952
   m_configObjects: {}
