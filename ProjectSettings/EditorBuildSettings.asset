@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LD1.unity
     guid: d2963b22deedd93408a304ec09c3156e
+  - enabled: 1
+    path: Assets/Scenes/CONVF.unity
+    guid: 19416cefac4bdaa4d99b00ae2a60b571
   m_configObjects: {}
