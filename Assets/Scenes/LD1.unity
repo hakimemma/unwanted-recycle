@@ -237,7 +237,6 @@ GameObject:
   - component: {fileID: 196480617}
   - component: {fileID: 196480620}
   - component: {fileID: 196480619}
-  - component: {fileID: 196480618}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -265,23 +264,6 @@ RectTransform:
   m_AnchoredPosition: {x: -186, y: 78}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &196480618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196480616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1d68d331f385e548977f413bac5f7b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textComponent: {fileID: 1900880239}
-  lines:
-  - 'Did you know most recyclyng that isnt recycled properly is blown away to the
-    sea. Then evantually ending up in another countries shore. '
-  textSpeed: 0
 --- !u!114 &196480619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,6 +392,7 @@ GameObject:
   - component: {fileID: 746363174}
   - component: {fileID: 746363173}
   - component: {fileID: 746363172}
+  - component: {fileID: 746363175}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -482,6 +465,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &746363175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746363171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5272fa5aa15344c45b6f9918a8328f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 0
+  playerBody: {fileID: 0}
+  just_lock: 1
+  will_we_lock: 0
 --- !u!1 &1018748648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,7 +1027,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'Did you know most recyclyng that isnt recycled properly is blown away
+    to the sea. Then evantually ending up in another countries shore. '
 --- !u!222 &1900880240
 CanvasRenderer:
   m_ObjectHideFlags: 0
