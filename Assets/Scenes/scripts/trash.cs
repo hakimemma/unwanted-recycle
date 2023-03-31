@@ -18,7 +18,10 @@ public class trash : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(collision.gameObject);
+        if (!collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(collision.gameObject);
+        }
         unwantedItems += 1;
     }
 
