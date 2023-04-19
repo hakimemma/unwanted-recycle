@@ -14,16 +14,17 @@ public class playermovement : MonoBehaviour
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
-
+    
     bool isGrounded;
     public bool playerMovement = true;
     public float mouseSensitivity = 100f;
-
+    Animator myAnim;
     float xRotation = 0f;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        myAnim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -43,13 +44,18 @@ public class playermovement : MonoBehaviour
 
             Vector3 move = transform.right * x + transform.forward * z;
 
+
             rb.velocity = (new Vector3(move.x * speed, rb.velocity.y, move.z * speed));
+
+            myAnim.SetBool("OnGround", isGrounded);
+            myAnim.SetFloat("speed", move.magnitude);
 
         } else
         {
             rb.velocity = Vector3.zero;
 
         }
+        
     }
 
     //public void Teleport(Vector3 position, Quaternion rotation)
